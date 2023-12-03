@@ -43,7 +43,9 @@ const connectToDataBase=()=>{
       console.error('MongoDB connection error:', err);
     });
   }
-
+  app.get('/', (req, res) => {
+    res.send('<h1>Server is live</h1>');
+  });
   connectToDataBase();
 app.listen(8080, () => {
     console.log('Heliverse backend  listening on port http://localhost:8080')
