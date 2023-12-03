@@ -1,0 +1,24 @@
+/* Style for the parent div */
+.nonPositionAffectingDiv {
+    position: relative;
+    background-color: lightgrey; /* Dark background color */
+    color: #ecf0f1; /* Light text color */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Style for child elements inside the nonPositionAffectingDiv */
+  .nonPositionAffectingDiv .childElement {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3498db; /* Blue color for child elements */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .heading{
+    font-size: 5em; /* Adjust the font size as needed */
+    color: Black; 
+  }
