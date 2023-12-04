@@ -35,7 +35,7 @@ const options = {
 
 
 const connectToDataBase=()=>{
-  mongoose.connect('mongodb://localhost:27017/heliverse', options)
+  mongoose.connect(process.env.MONGO_URL, options)
     .then(() => {
       console.log('MongoDB connected');
     })
@@ -55,4 +55,5 @@ app.listen(8080, () => {
 
 
 
-
+//CL1JKFOEUFovr8g7
+//sahiltyagi6789

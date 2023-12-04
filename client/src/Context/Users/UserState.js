@@ -1,7 +1,7 @@
 import UserContext from "./UserContext";
 import { useState } from "react";
-const URL = "https://crudbackend-ji6c.onrender.com";
-
+// const URL = "https://crudbackend-ji6c.onrender.com";
+const URL="http://localhost:8080";
 const UserState = (props) => {
   const [user, setUser] = useState([]);
   const [queries, setQueries] = useState([]);
