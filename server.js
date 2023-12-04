@@ -35,7 +35,7 @@ const options = {
 
 
 const connectToDataBase=()=>{
-  mongoose.connect(process.env.MONGO_URL, options)
+  mongoose.connect("mongodb+srv://sahiltyagi6789:CL1JKFOEUFovr8g7@cluster0.ncpdcqq.mongodb.net/heliverse?retryWrites=true&w=majority", options)
     .then(() => {
       console.log('MongoDB connected');
     })
